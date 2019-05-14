@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                    echo "Multiline shell steps works too op"
+                    echo "Multiline shell steps works too "
                     ls -lah
                 '''
             }
