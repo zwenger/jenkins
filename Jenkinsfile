@@ -4,8 +4,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
-                sh echo 'holita'
+                sh 'echo "Hello World"'
+                sh '''
+                    echo "Multiline shell steps works too"
+                    ls -lah
+                '''
             }
         }
     }
